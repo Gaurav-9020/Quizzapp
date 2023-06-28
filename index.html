@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container" id="homeContainer">
+    <!-- <h1>Quiz App</h1> -->
+    <div class="details-center">
+        <img src="https://play-lh.googleusercontent.com/oZKb4MS_3fA2URqyMW2QvWqm7Bhjikz_L8002o4VLpIfVUmcVXZUa1OI0r5QS_8b3XA" height="100px" width="100px" alt="Image not found">
+    </div>
+    <div id="userDetails">
+        <div class="details-center">
+            <h1 style="color: rgb(26, 26, 122);">Hello User!</h1>
+            <label for="name">Enter your name to continue the Quiz</label>
+        </div>
+      <div class="inline">
+        <input type="text" id="name" placeholder="Enter your name...">
+        <button id="startQuiz" style="margin-left: 20px;">Enter</button>
+      </div>
+    </div>
+    <div id="category">
+        <div class="details-center">
+            <h2>Select a Category</h2>
+            <p>These category button will navigate us to a list of 10 questions each</p>
+        </div>
+        <div class="categoryContainer">
+            <div class="options-row">
+                <button class="categoryButton " data-category="Pipes and Cisterns">Pipes and Cisterns</button>
+                <button class="categoryButton" data-category="Probability">Probability</button>
+            </div>
+            <div class="options-row">
+                <button class="categoryButton" data-category="Problems on Age">Problems on Age</button>
+                <button class="categoryButton" data-category="Profit and Loss">Profit and Loss</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id="quizContainer">
+    <div id="timer">Timer: <span id="timeLeft"></span></div>
+    <div id="score">Score: <span id="currentScore"></span></div>
+    <div id="questionContainer"></div>
+    <button id="nextQuestion">Next Question</button>
+  </div>
+
+  <div class="container" id="resultContainer">
+    <h2>Quiz Result</h2>
+    <p id="participantName"></p>
+    <p>Total Time Taken: <span id="totalTime"></span></p>
+    <p>Total Questions: <span id="totalQuestions"></span></p>
+    <p>Attempted: <span id="attempted"></span</p>
+    <p>No. of Correct Answers: <span id="correctAnswers"></span></p>
+    <p>No. of Wrong Answers: <span id="wrongAnswers"></span></p>
+<p>Score: <span id="percentageScore"></span>%</p>
+<button id="startAgain">Start Again</button>
+<button id="goToHome">Go to Home</button>
+ </div>
+    <script src="script.js"></script>
+</body>
+</html>
